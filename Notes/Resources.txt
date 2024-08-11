@@ -1,0 +1,10 @@
+Using this crate for regex:
+https://docs.rs/regex/latest/regex/
+May want to consider lazy-regex crate eventually.
+
+Rust crate for lexer creation:
+https://crates.io/crates/lexgen
+
+Learning / Practice resources:
+https://rust-unofficial.github.io/too-many-lists/
+https://github.com/rust-lang/rustlings/blob/main/README.md
