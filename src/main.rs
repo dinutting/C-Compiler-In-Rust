@@ -1,29 +1,29 @@
 mod lexer;
-use regex::{Match, Regex};
+
 use lexer::*;
-use json::*;
-//mod regexLoader;
 
 fn main() {
-    //say_hello();
-    println!("Hello, world!");
-    lexer::lexer();
+    
+    // get file path from arguments
 
-    // let instantiated = regexLoader::load_tokens();
+    // read source from file path
+    let source: String = String::from("void main() { return; }");
 
-    // println!("{}",instantiated["tokens"][0]["tokenType"]);
-    //println!("{}", WHITESPACE.regex);
+    // Use the lexer to tokenize the source (Should token be shifted to it's own module?)
+    let tokens: Vec<Token> = lexer::lexer(&source);
 
-    // let re = Regex::new(RETURNKEYWORD.regex).unwrap();
+    // Test showing the tokens are working
+    for t in tokens {
+         t.print();
+    }
 
-    // let Some(caps) = re.captures("test return thing")
-    //     else { println!("no match!"); return;};
+    // Parse the tokens into an AST
+    // TODO, define AST nodes
+    // TODO - build parser with recursive descent
 
-    //let rematch: Match = RETURNKEYWORD.rematch("my return is nigh");
+    // Translate the AST into machine code
+    // TODO iterate through AST nodes and convert
 
-    //let Some(rematch) = INTKEYWORD.rematch("int main()")
-    //    else { println!("No match"); return; };
+    // Write machine code to output
 
-    //rematch;
-    //println!("{}", rematch.as_str());
 }
