@@ -1,4 +1,4 @@
-#![allow(dead_code)]
+//#![allow(dead_code)]
 // Add new tokens in the generate_tmakers function
 
 use regex::Regex;

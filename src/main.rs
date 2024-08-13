@@ -1,11 +1,14 @@
 mod lexer;
+//mod parser;
+mod _parser;
+mod output;
 
 use lexer::*;
 
 fn main() {
     
     // get file path from arguments
-
+    output::test();
     // read source from file path
     let source: String = String::from("void main() { return; }");
 
@@ -17,7 +20,10 @@ fn main() {
          t.print();
     }
 
+
+
     // Parse the tokens into an AST
+    _parser::parser();
     // TODO, define AST nodes
     // TODO - build parser with recursive descent
 

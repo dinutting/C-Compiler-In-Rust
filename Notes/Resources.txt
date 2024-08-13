@@ -8,3 +8,9 @@ https://crates.io/crates/lexgen
 Learning / Practice resources:
 https://rust-unofficial.github.io/too-many-lists/
 https://github.com/rust-lang/rustlings/blob/main/README.md
+
+Consider this parser for larger projects:
+https://pest.rs
+
+An interesting dataframe crate which may be useful for the eventual project goal:
+https://docs.pola.rs/user-guide/getting-started/#select
